@@ -35,7 +35,7 @@ app.post("/signup",async(req,res)=>{
                         password:hash
                     });
                     console.log("hash");
-                    // await dataDone.save();
+                    await dataDone.save();
                     res.send({msg:"done signup"});
                 }
         });
